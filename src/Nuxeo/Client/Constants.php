@@ -38,6 +38,10 @@ class Constants {
 
   const ENTITY_TYPE_DOCUMENTS = 'documents';
 
+  const ENTITY_TYPE_AGGREGATION = 'aggregation';
+
+  const ENTITY_TYPE_AGGREGATIONS = 'aggregations';
+
   const ENTITY_TYPE_OPERATION = 'operation';
 
   const ENTITY_TYPE_USER = 'user';

@@ -24,6 +24,12 @@ use Nuxeo\Client\Constants;
 class Documents extends AbstractEntityList {
 
   /**
+   * @var object
+   * @Serializer\Type("array<string,Nuxeo\Client\Objects\Aggregation>")
+   */
+  protected $aggregations = [];
+
+  /**
    * @var Document[]
    * @Serializer\Type("array<Nuxeo\Client\Objects\Document>")
    */
@@ -42,5 +48,12 @@ class Documents extends AbstractEntityList {
   protected function &getEntries() {
     return $this->entries;
   }
+
+  /**
+   * @return object
+   */
+  public function &getAggregations() {
+        return $this->aggregations;
+    }
 
 }
